@@ -13,7 +13,7 @@ exports.up = function(knex) {
             .notNullable()
             .unique();
         })
-        .createTable('reciples', tbl => {
+        .createTable('recipies', tbl => {
             tbl.increments();
             tbl.string('name')
             .unique()
